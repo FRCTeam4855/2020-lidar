@@ -29,7 +29,7 @@ public class Robot extends TimedRobot {
   @Override
   public void robotInit() {
 
- m_LIDAR = new Counter(0);
+ m_LIDAR = new Counter(8);
  //plug the lidar into DIO 0
   
  m_LIDAR.setMaxPeriod(1.00);
@@ -66,6 +66,7 @@ public class Robot extends TimedRobot {
     SmartDashboard.putNumber("Inches", length);
     SmartDashboard.putNumber("Distance", dist);
     SmartDashboard.putNumber("Centimeter", dist);
+   
 
  //put the distance on the dashboard
  
